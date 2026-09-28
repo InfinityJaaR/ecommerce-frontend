@@ -1,0 +1,30 @@
+{
+  "name": "ecommerce-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint app components lib next.config.ts eslint.config.mjs",
+    "typecheck": "tsc --noEmit",
+    "lighthouse": "npx --yes lighthouse http://localhost:3000 --preset=desktop --output=html --output-path=./docs/evidence/lighthouse-desktop.html",
+    "lighthouse:mobile": "npx --yes lighthouse http://localhost:3000 --form-factor=mobile --screenEmulation.mobile --screenEmulation.width=390 --screenEmulation.height=844 --screenEmulation.deviceScaleFactor=3 --output=html --output-path=./docs/evidence/lighthouse-mobile.html"
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^3.9.0",
+    "@stripe/stripe-js": "^7.9.0",
+    "next": "^16.0.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "zod": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.0.0",
+    "typescript": "^5.8.0"
+  }
+}
