@@ -5,7 +5,7 @@ Frontend de e-commerce independiente construido con **Next.js 16 App Router, Rea
 ## Requisitos
 
 - Node.js 20.9 o posterior y npm.
-- API Laravel disponible (por defecto, `http://localhost:8000`). Instrucciones de instalación: [`../ecommerce-api/README.md`](../ecommerce-api/README.md).
+- API Laravel disponible (por defecto, `http://localhost:8000`). Instrucciones de instalación: [`../ecommerce-api/README.md`](https://github.com/InfinityJaaR/ecommerce-api/blob/main/README.md).
 - Claves de Stripe en modo de prueba configuradas en Laravel. Para el estado final del pedido, la API debe recibir el webhook de Stripe.
 
 ## Configuración
